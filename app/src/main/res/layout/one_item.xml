@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:padding="12dp">
+
+    <!-- Workout Name -->
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upper Body Gym"
+        android:textColor="#F69A9A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Workout Description -->
+    <TextView
+        android:id="@+id/itemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a workout focused on upper body strength."
+        android:textColor="#EB8BA6"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/itemTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Workout Difficulty -->
+    <TextView
+        android:id="@+id/itemDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty: 8"
+        android:textColor="#EB8BA6"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/itemDescription"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Workout Length -->
+    <TextView
+        android:id="@+id/itemLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length: 30 mins"
+        android:textColor="#E583A6"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/itemDescription"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Equipment Requirement -->
+    <TextView
+        android:id="@+id/itemEquipment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Equipment"
+        android:textColor="#F397A1"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/itemLength"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/buttonStartWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Workout"
+        android:textColor="@android:color/white"
+        android:background="#5E000000"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/itemEquipment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Divider -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonStartWorkout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
